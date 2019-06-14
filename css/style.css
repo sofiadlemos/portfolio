@@ -2,6 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 
+
 /*
 ----------- Menu --------------
 */
@@ -50,6 +51,83 @@ a:hover {
     color: #333333;
     text-decoration: none;
 }
+
+
+
+/*
+----------- Secções --------------
+*/
+#home {
+    background: url(../img/home-bw.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+
+#about {
+    padding: 100px 0;
+    background: #f3f3f3;
+    height: 100%;
+}
+
+#formation {
+    padding: 100px 0;
+    background: #fff;
+    height: 100%;
+}
+
+#experience {
+    padding: 100px 0;
+    background: #f3f3f3;
+    height: 100%;
+}
+
+#skills{
+    padding: 100px 0;
+    background: #fff;
+    height: 100%;
+}
+
+#projects {
+    padding: 100px 0;
+    background: #f3f3f3;
+    height: 100%;
+}
+
+/*
+----------- Títulos --------------
+*/
+h1 {
+    font-family: 'Gidole', serif;
+    font-size: 80px;
+    line-height: 70px;
+    color: #f3f3f3;
+}
+
+h2 {
+    font-family: 'Gidole', serif;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+h3 {
+    font-family: 'Gidole', serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #B46D41;
+}
+
+h4 {
+    font-family: 'Gidole', serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #B46D41;
+    padding-top: 4%
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+ }
 
 
 /*
@@ -180,10 +258,65 @@ a:hover {
      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
 
+.timeline-item:hover h2{
+    color:#B46D41;
+}
 
 .row{
 	padding: 4%;
 }
+
+
+/*
+----------- Experiencia --------------
+*/
+
+.box{
+  display:table;
+  position:relative;
+  background:#fff;
+  width: 70%;
+  border:1px solid #e7e7e7;
+  margin:40px auto 0 auto;
+
+}
+
+.box img{
+  width: 50px;
+  height: 50px;
+  position:absolute;
+  margin:0 0 0 0;
+  z-index:5;
+  left:-20px;
+  top:-15px;
+}
+
+.box p{
+  float:left;
+  text-align:left;
+  font-size:15px;
+  color:#5f5f5f;
+  margin: 0 40px 40px 40px;
+}
+
+.box h2{
+  font-size: 30px;
+  margin: 10px 0 -50px 40px;
+}
+
+.box h4{
+  font-size: 15px;
+  margin: 0 40px 0 40px;
+}
+
+.box:hover h2{
+    color:#B46D41;
+}
+
+.box:hover h4{
+    color:#333;
+}
+
 
 /*
 ----------- Projectos --------------
@@ -191,81 +324,6 @@ a:hover {
 
 .item{ background-color: white; }
 
-
-/*
------------ Secções --------------
-*/
-#home {
-    background: url(../img/home-bw.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-
-#about {
-    padding: 100px 0;
-    background: #f3f3f3;
-    height: 100vh;
-}
-
-#formation {
-    padding: 100px 0;
-    background: #fff;
-    height: 100%;
-}
-
-#experience {
-    padding: 100px 0;
-    background: #f3f3f3;
-    height: 100%;
-}
-
-#skills{
-    padding: 100px 0;
-    background: #fff;
-    height: 100%;
-}
-
-#projects {
-    padding: 100px 0;
-    background: #f3f3f3;
-    height: 100%;
-}
-
-/*
------------ Títulos --------------
-*/
-h1 {
-    font-family: 'Gidole', serif;
-    font-size: 80px;
-    line-height: 70px;
-    color: #f3f3f3;
-}
-
-h2 {
-    font-family: 'Gidole', serif;
-    font-size: 60px;
-    line-height: 70px;
-}
-
-h3 {
-    font-family: 'Gidole', serif;
-    font-size: 30px;
-    line-height: 30px;
-    color: #B46D41;
-}
-
-h4 {
-    font-family: 'Gidole', serif;
-    font-size: 20px;
-    line-height: 30px;
-    color: #B46D41;
-    padding-top: 4%
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
- }
 
 
 .imgicons {
@@ -305,7 +363,6 @@ p {
 	width: 40%;
 }
 
-/* The company logo */
 
 .footer-distributed h3{
 	color:  #B46D41;
@@ -448,3 +505,62 @@ p {
 	}
 
 }
+
+
+/* ------------- Animação -------------------- */
+
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+

@@ -14,34 +14,9 @@
 
 	<script src="js/script.js"></script>
 
-	<script type="text/javascript">
-
-		var today = new Date();
-		var hourNow = today.getHours();
-		var greeting;
-		var icon;
-
-		if (hourNow < 12){
-			greeting = "Bom dia";
-		}
-		else if (hourNow < 20){
-			greeting = 'Boa tarde';
-		}
-		else if (hourNow < 24){
-			greeting = "Boa noite"
-		}
-		else {
-			greeting = "Bem-vindo";
-		}
-
-		document.getElementById("welcome").innerHTML = greeting + ", sou a Sofia!";
-
-	</script>
-
-
 </head>
 <body> 
-	<header class="navbar-fixed-top" id="nav">
+	<header class="navbar-fixed-top fade-in" id="nav">
 		<nav>
 			<ul>
 				<li><a href="#about">Sobre</a></li>
@@ -57,7 +32,7 @@
 	<div class="section" id="home">
 		<div class="container">
 			<div class="disply-table">
-				<div class="table-cell">
+				<div class="table-cell fade-in">
 					<h1>Sofia Duque<br/>Lemos</h1>
 				</div>
 			</div>
@@ -72,8 +47,8 @@
 			<h2>Sobre mim</h2>
 
 			<div class="col-md-8 data-aos="fade-up">
-				<p id="welcome"></p>
-				<p class="bio">Sempre tive um forte interesse pela área artística, sendo que o comecei a demonstrar desde
+				
+				<p id="welcome" class="bio">Sempre tive um forte interesse pela área artística, sendo que o comecei a demonstrar desde
 					cedo com os presentes criativos que fazia às pessoas mais próximas de mim.  Foi na área do Design que descobri o
 					que realmente me interessava. O fator da relação dos objetos e do espaço com as pessoas, o
 					significado das coisas e que nada existe por acaso, sendo que tudo o que nós vemos no nosso
@@ -171,12 +146,35 @@
 		<div class="container">
 
 			<h2>Experiência</h2>
+			
+			<div class="box">
+				<div class="quote_button"><img src="img/icones/work.png" alt="" /></div>
+				<h2>Part-Time | Matinfra</h2>
+				<h4>2015-2018</h4>
+				<p>Descrição do que fizeste</p>
+			</div>
+
+			<div class="box">
+				<div class="quote_button"><img src="img/icones/work.png" alt="" /></div>
+				<h2>Estágio Curricular | Escritório de Arquitetura</h2>
+				<h4>2016-2017</h4>
+				<p>Descrição do que fizeste</p>
+			</div>
+
+			<div class="box">
+				<div class="quote_button"><img src="img/icones/work.png" alt="" /></div>
+				<h2>Part-Time | Vouga Tintas</h2>
+				<h4>2014</h4>
+				<p>Descrição do que fizeste</p>
+			</div>
 
 			
 		</div>
 
 
 	</div>
+
+
 
 	<!-- skills -->
 	<div class="section" id="skills">
@@ -628,56 +626,56 @@
 
 	<!-- Rodapé -->
 
-		<footer class="footer-distributed">
+	<footer class="footer-distributed">
 
-			<div class="footer-left">
+		<div class="footer-left">
 
-				<h3>Sofia Duque Lemos</h3>
+			<h3>Sofia Duque Lemos</h3>
 
-				<p class="footer-links">
-					<a href="#about">Sobre</a>
-					|
-					<a href="#formation">Formação</a>
-					|
-					<a href="#experience">Experiência</a>
-					|
-					<a href="#skills">Skills</a>
-					|
-					<a href="#projects">Projetos</a>
+			<p class="footer-links">
+				<a href="#about">Sobre</a>
+				|
+				<a href="#formation">Formação</a>
+				|
+				<a href="#experience">Experiência</a>
+				|
+				<a href="#skills">Skills</a>
+				|
+				<a href="#projects">Projetos</a>
 
-				</p>
+			</p>
 
-				<p class="footer-company-name"> &copy; 2019</p>
+			<p class="footer-company-name"> &copy; 2019</p>
+		</div>
+
+		<div class="footer-center">
+
+			<div>
+				<i class="ion-android-mail"></i>
+				<p><a href="mailto:sofiaduquelemos@ua.pt">sofiaduquelemos@ua.pt</a></p>
 			</div>
 
-			<div class="footer-center">
+			<div>
+				<i class="ion-ios-telephone"></i>
+				<p>964 176 108</h3></p>
+			</div>
 
-				<div>
-					<i class="ion-android-mail"></i>
-					<p><a href="mailto:sofiaduquelemos@ua.pt">sofiaduquelemos@ua.pt</a></p>
-				</div>
+			<div class="footer-icons">
 
-				<div>
-					<i class="ion-ios-telephone"></i>
-					<p>964 176 108</h3></p>
-				</div>
-
-				<div class="footer-icons">
-
-					<a href="https://www.facebook.com/profile.php?id=100007540039352"><i class="ion-social-facebook"></i></a>
-					<a href="https://www.linkedin.com/in/sofia-lemos-a6696415b/"><i class="ion-social-linkedin"></i></a>
-					<a href="https://www.instagram.com/sofiadlemos"><i class="ion-social-instagram"></i></a>
-
-				</div>
+				<a href="https://www.facebook.com/profile.php?id=100007540039352"><i class="ion-social-facebook"></i></a>
+				<a href="https://www.linkedin.com/in/sofia-lemos-a6696415b/"><i class="ion-social-linkedin"></i></a>
+				<a href="https://www.instagram.com/sofiadlemos"><i class="ion-social-instagram"></i></a>
 
 			</div>
 
-		</footer>
+		</div>
+
+	</footer>
 
 
 </div>
 
-		
+
 
 </body>
 </html>

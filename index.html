@@ -7,8 +7,36 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+	<script src="js/script.js"></script>
+
+	<script type="text/javascript">
+
+		var today = new Date();
+		var hourNow = today.getHours();
+		var greeting;
+		var icon;
+
+		if (hourNow < 12){
+			greeting = "Bom dia";
+		}
+		else if (hourNow < 20){
+			greeting = 'Boa tarde';
+		}
+		else if (hourNow < 24){
+			greeting = "Boa noite"
+		}
+		else {
+			greeting = "Bem-vindo";
+		}
+
+		document.getElementById("welcome").innerHTML = greeting + ", sou a Sofia!";
+
+	</script>
 
 
 </head>
@@ -21,7 +49,6 @@
 				<li><a href="#experience">Experiência</a></li>
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#projects">Projetos</a></li>
-				<li><a href="#contact">Contacto</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -45,6 +72,7 @@
 			<h2>Sobre mim</h2>
 
 			<div class="col-md-8 data-aos="fade-up">
+				<p id="welcome"></p>
 				<p class="bio">Sempre tive um forte interesse pela área artística, sendo que o comecei a demonstrar desde
 					cedo com os presentes criativos que fazia às pessoas mais próximas de mim.  Foi na área do Design que descobri o
 					que realmente me interessava. O fator da relação dos objetos e do espaço com as pessoas, o
@@ -324,48 +352,48 @@
 
 
 				<div class="text-center item">
-				<h4>InVerso</h4>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
+					<h4>InVerso</h4>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
 
-					</ol>
+						</ol>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/projetos/inverso 1-min.jpg" alt="">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/projetos/inverso 1-min.jpg" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/inverso 2-min.jpg" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/inverso 3-min.jpg" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/inverso 4.png" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/inverso 5-min.jpg" alt="">
+							</div>
+
 						</div>
-
-						<div class="item">
-							<img src="img/projetos/inverso 2-min.jpg" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/inverso 3-min.jpg" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/inverso 4.png" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/inverso 5-min.jpg" alt="">
-						</div>
-
 					</div>
-				</div>
 
-				<div class="description">
-					<p>O saco InVerso é desdobrável com o objetivo de evitar o desperdício de plástico nas idas ao supermercado, por exemplo, ou seja, um saco sustentável. O padrão do saco faz referência a um dos pontos turísticos do distrito de Aveiro, a praia da Costa Nova, o tecido escolhido para o nosso saco remete para as riscas características das casas e barracas desse local. Assim, pretendemos estabelecer uma ligação com a cidade na qual a universidade se insere. A sustentabilidade é um tema importante associado ao nosso projeto, tendo em conta as nossas intenções de evitar o desperdício no uso de vários sacos. Ao comprarem o saco da InVerso, as pessoas estarão a contribuir para um planeta mais sustentável, pois terão um menor impacto no mundo. Com esta marca pretendemos alertar e consciencializar as pessoas para a importância da preocupação com o ambiente e da preservação do mesmo. Deste modo, esperamos conseguir chegar a um público vasto, pois com pequenos gestos podemos fazer uma grande diferença. Oferecemos ao ser humano a capacidade de interagir com o mundo, preservando o meio ambiente para não comprometer os recursos naturais das gerações futuras. O nosso produto pretende também abordar questões relativas à universalidade. A universidade de Aveiro é um campus aberto, que acolhe não só estudantes de todas as nacionalidades mas também qualquer pessoa que o queira integrar. Deste modo, o nosso saco não foi desenhado com o intuito de ser apenas para um género, mas sim para qualquer pessoa que o queira usar, quer seja do sexo masculino ou feminino. Ao ser um saco dobrável é possível guardá-lo em qualquer lado ou até pendurá-lo num porta-chaves ou até nas calças, servindo apenas de porta moedas. Quando aberto serve de saco ou de mochila conseguindo guardar objetos de vários tamanhos, desde pequenos bens até objetos de maiores dimensões como computadores. Os utilizadores podem escolher o tecidos e a ilsutração do saco.</p>
-				</div>
+					<div class="description">
+						<p>O saco InVerso é desdobrável com o objetivo de evitar o desperdício de plástico nas idas ao supermercado, por exemplo, ou seja, um saco sustentável. O padrão do saco faz referência a um dos pontos turísticos do distrito de Aveiro, a praia da Costa Nova, o tecido escolhido para o nosso saco remete para as riscas características das casas e barracas desse local. Assim, pretendemos estabelecer uma ligação com a cidade na qual a universidade se insere. A sustentabilidade é um tema importante associado ao nosso projeto, tendo em conta as nossas intenções de evitar o desperdício no uso de vários sacos. Ao comprarem o saco da InVerso, as pessoas estarão a contribuir para um planeta mais sustentável, pois terão um menor impacto no mundo. Com esta marca pretendemos alertar e consciencializar as pessoas para a importância da preocupação com o ambiente e da preservação do mesmo. Deste modo, esperamos conseguir chegar a um público vasto, pois com pequenos gestos podemos fazer uma grande diferença. Oferecemos ao ser humano a capacidade de interagir com o mundo, preservando o meio ambiente para não comprometer os recursos naturais das gerações futuras. O nosso produto pretende também abordar questões relativas à universalidade. A universidade de Aveiro é um campus aberto, que acolhe não só estudantes de todas as nacionalidades mas também qualquer pessoa que o queira integrar. Deste modo, o nosso saco não foi desenhado com o intuito de ser apenas para um género, mas sim para qualquer pessoa que o queira usar, quer seja do sexo masculino ou feminino. Ao ser um saco dobrável é possível guardá-lo em qualquer lado ou até pendurá-lo num porta-chaves ou até nas calças, servindo apenas de porta moedas. Quando aberto serve de saco ou de mochila conseguindo guardar objetos de vários tamanhos, desde pequenos bens até objetos de maiores dimensões como computadores. Os utilizadores podem escolher o tecidos e a ilsutração do saco.</p>
+					</div>
 
-			</div>
+				</div>
 
 			</div>
 
@@ -451,184 +479,205 @@
 				</div>
 
 
-			<div class="text-center item">
-				<h4>Sentido</h4>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-					</ol>
+				<div class="text-center item">
+					<h4>Sentido</h4>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/projetos/cartaz sentido.png" alt="">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/projetos/cartaz sentido.png" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/maquete sentido-min.jpg" alt="">
+							</div>
+
 						</div>
-
-						<div class="item">
-							<img src="img/projetos/maquete sentido-min.jpg" alt="">
-						</div>
-
 					</div>
-				</div>
 
-				<div class="description">
-					<p>Este projeto foi proposto pela Universidade de Aveiro através da disciplina de Projeto em Deisgn II. O objetivo foi intervir nuns contentores da universidade que servem como balneários no campo desportivo exterior. Houve como restrições manter a cor e a arquitetura dos contentores. Como proposta do meu grupo de trabalho, procurámos manter a sobriedade dos contentores intervindo de maneira mais discreta e objetiva. O foco deste trabalho foi a identificação dos quatro balneários através da sinalética, sendo esta feita através da numeração. Para facilitar a identificação dos balneários utilizou-se um foco através das riscas verticas que convergem para as portas dos balneários superiores. A única porta que não está sinalizada com um número é o compartimento dos primeiros socorros.</p>
-				</div>
-
-			</div>
-
-			</div>
-
-
-		<div class="col-md-4">
-
-
-			<div class="text-center item">
-				<h4>Cibele</h4>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-						<li data-target="#myCarousel" data-slide-to="3"></li>
-						<li data-target="#myCarousel" data-slide-to="4"></li>
-						<li data-target="#myCarousel" data-slide-to="5"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/projetos/cibele 1.png" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/cibele 2.jpg" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/cibele 3.jpg" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/cibele 4.jpg" alt="">
-						</div>
-						<div class="item">
-							<img src="img/projetos/cibele 5.jpg" alt="">
-						</div>
-
-						<div class="item">
-							<img src="img/projetos/cibele 6.jpg" alt="">
-						</div>
-
+					<div class="description">
+						<p>Este projeto foi proposto pela Universidade de Aveiro através da disciplina de Projeto em Deisgn II. O objetivo foi intervir nuns contentores da universidade que servem como balneários no campo desportivo exterior. Houve como restrições manter a cor e a arquitetura dos contentores. Como proposta do meu grupo de trabalho, procurámos manter a sobriedade dos contentores intervindo de maneira mais discreta e objetiva. O foco deste trabalho foi a identificação dos quatro balneários através da sinalética, sendo esta feita através da numeração. Para facilitar a identificação dos balneários utilizou-se um foco através das riscas verticas que convergem para as portas dos balneários superiores. A única porta que não está sinalizada com um número é o compartimento dos primeiros socorros.</p>
 					</div>
-				</div>
 
-				<div class="description">
-					<p>Cibele é uma marca de cosmética à base de produtos naturais. A marca procura transformar o mundo e a consciência das pessoas, dando um passo em frente para tornar o nosso ambiente sustentável. A água de colónia da marca Cibele põe em prática os princípios da mesma. Sendo parte de um conjunto de produtos biológicos e de embalagens recicláveis. Procura criar o menor impacto no ambiente. É constituída apenas por um frasco de vidro, que pode ser recarregável em qualquer loja, e por uma tampa que inclui um elemento de aplicação do produto. Como substituição ao plástico, um material com muitos malefícios para a Natureza, utiliza-se a madeira. Na parte de cima a tampa cilíndrica abre através de uma rosca, de forma rotativa. Sob a tampa está um elemento vertical com uma aplicação na parte inferior, inspirada na coroa da Cibele. Essa aplicação serve para o utilizador aplicar o produto de um modo prático e agradável, dada a sua forma é possível recolher a quantidade adequada de água de colónia, evitando assim repetir o processo muitas vezes e o seu desperdício. A parte de baixo é apenas constituída por um frasco de vidro da mesma forma cilíndrica, mas com diâmetro superior ao da tampa e uma rosca de madeira com diâmetro inferior a esta. Este elemento serve apenas para conter o líquido e para recarregar. Esta embalagem foi feita para estar pousada de forma segura, dado que o seu material principal é o vidro. O seu tamanho é o adequado para que o cliente possa usufruir do conceito de recarregar, no entanto mantendo uma longa durabilidade. Os ingredientes utilizados são naturais e biológicos. Posto isto a aplicação do produto torna-se prática e agradável, sem grandes consequências para o nosso meio ambiente. Assim como o produto em si que vai de acordo com a sua embalagem e com os conceitos da marca, não incluindo ingredientes artificiais, trazendo assim mais benefícios para a pele dos utilizadores.</p>
 				</div>
 
 			</div>
 
 
-			<div class="text-center item">
-				<h4>Topázio e Onyx</h4>
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-					</ol>
+			<div class="col-md-4">
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/projetos/topazio.png" alt="">
+
+				<div class="text-center item">
+					<h4>Cibele</h4>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+							<li data-target="#myCarousel" data-slide-to="5"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/projetos/cibele 1.png" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/cibele 2.jpg" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/cibele 3.jpg" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/cibele 4.jpg" alt="">
+							</div>
+							<div class="item">
+								<img src="img/projetos/cibele 5.jpg" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/cibele 6.jpg" alt="">
+							</div>
+
 						</div>
+					</div>
 
-						<div class="item">
-							<img src="img/projetos/onyx.png" alt="">
+					<div class="description">
+						<p>Cibele é uma marca de cosmética à base de produtos naturais. A marca procura transformar o mundo e a consciência das pessoas, dando um passo em frente para tornar o nosso ambiente sustentável. A água de colónia da marca Cibele põe em prática os princípios da mesma. Sendo parte de um conjunto de produtos biológicos e de embalagens recicláveis. Procura criar o menor impacto no ambiente. É constituída apenas por um frasco de vidro, que pode ser recarregável em qualquer loja, e por uma tampa que inclui um elemento de aplicação do produto. Como substituição ao plástico, um material com muitos malefícios para a Natureza, utiliza-se a madeira. Na parte de cima a tampa cilíndrica abre através de uma rosca, de forma rotativa. Sob a tampa está um elemento vertical com uma aplicação na parte inferior, inspirada na coroa da Cibele. Essa aplicação serve para o utilizador aplicar o produto de um modo prático e agradável, dada a sua forma é possível recolher a quantidade adequada de água de colónia, evitando assim repetir o processo muitas vezes e o seu desperdício. A parte de baixo é apenas constituída por um frasco de vidro da mesma forma cilíndrica, mas com diâmetro superior ao da tampa e uma rosca de madeira com diâmetro inferior a esta. Este elemento serve apenas para conter o líquido e para recarregar. Esta embalagem foi feita para estar pousada de forma segura, dado que o seu material principal é o vidro. O seu tamanho é o adequado para que o cliente possa usufruir do conceito de recarregar, no entanto mantendo uma longa durabilidade. Os ingredientes utilizados são naturais e biológicos. Posto isto a aplicação do produto torna-se prática e agradável, sem grandes consequências para o nosso meio ambiente. Assim como o produto em si que vai de acordo com a sua embalagem e com os conceitos da marca, não incluindo ingredientes artificiais, trazendo assim mais benefícios para a pele dos utilizadores.</p>
+					</div>
+
+				</div>
+
+
+				<div class="text-center item">
+					<h4>Topázio e Onyx</h4>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/projetos/topazio.png" alt="">
+							</div>
+
+							<div class="item">
+								<img src="img/projetos/onyx.png" alt="">
+							</div>
+
 						</div>
+					</div>
 
+					<div class="description">
+						<p>Este projeto começou por um estudo e mapeamento de marcas. Após este processo formaram-se grupos de trabalho com os mesmos interesses. Sendo que o objetivo do meu grupo era encontrar toda a infomação sobre as cervejas “Topázio” e “Onyx”. Descobrir toda a sua história, como era no passado, quando faliu, quando voltou a aparecer e como está atualmente. Foi criada uma cronologia sobre a vida desta cervejas de modo a perceber melhor toda a sua história. Foi um trabalho muito à base de entrevistas e visitas ao museu e lojas atuais. Foi estudado também o processo de fabrico da cerveja e para alêm disso as duas grandes marcas de cerveja: Sagres e Superbock. Este projeto ajudou-me a perceber melhor o funcionamento das grandes marcas e entender as vantagens e desvantagens da concorrência e os obstáculos que uma marca pode encontrar. Atualmente as duas marcas que nasceram em Coimbra voltaram a ser produzidas "com a água de Coimbra e mantendo as suas receitas originais”. A Topázio é uma cerveja do estilo pilsner, com 5,6% de teor alcoólico, de cor dourada clara, e é produzida com 100% malte cevada. A Onyx é uma dark lager com 4,5% de teor alcoólico, de cor castanho muito escuro e aroma a malte torrado.</p>
 					</div>
 				</div>
 
-				<div class="description">
-					<p>Este projeto começou por um estudo e mapeamento de marcas. Após este processo formaram-se grupos de trabalho com os mesmos interesses. Sendo que o objetivo do meu grupo era encontrar toda a infomação sobre as cervejas “Topázio” e “Onyx”. Descobrir toda a sua história, como era no passado, quando faliu, quando voltou a aparecer e como está atualmente. Foi criada uma cronologia sobre a vida desta cervejas de modo a perceber melhor toda a sua história. Foi um trabalho muito à base de entrevistas e visitas ao museu e lojas atuais. Foi estudado também o processo de fabrico da cerveja e para alêm disso as duas grandes marcas de cerveja: Sagres e Superbock. Este projeto ajudou-me a perceber melhor o funcionamento das grandes marcas e entender as vantagens e desvantagens da concorrência e os obstáculos que uma marca pode encontrar. Atualmente as duas marcas que nasceram em Coimbra voltaram a ser produzidas "com a água de Coimbra e mantendo as suas receitas originais”. A Topázio é uma cerveja do estilo pilsner, com 5,6% de teor alcoólico, de cor dourada clara, e é produzida com 100% malte cevada. A Onyx é uma dark lager com 4,5% de teor alcoólico, de cor castanho muito escuro e aroma a malte torrado.</p>
-				</div>
-			</div>
+				<div class="text-center item">
+					<h4>Calendário</h4>
 
-			<div class="text-center item">
-				<h4>Calendário</h4>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
 
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-					</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="img/projetos/calendario 1-min.png" alt="">
+							</div>
+							<div class="item">
+								<img src="img/projetos/calendario 2-min.png" alt="">
+							</div>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="img/projetos/calendario 1-min.png" alt="">
-						</div>
-						<div class="item">
-							<img src="img/projetos/calendario 2-min.png" alt="">
 						</div>
 
 					</div>
 
-				</div>
+					<div class="description">
+						<p>O objetivo deste trabalho era criar uma página de um calendário para o mês atribuído. O que me calhou foi o mês de Janeiro. Utilizei uma ilustração que representasse este mês, sendo essa um brinde a representar o início de um novo ano. Para alêm disso, criei um padrão com tipografia para complementar o calendário. As únicas cores permitidas foram os pantones vermelho e preto. Como trabalho final obtive uma solução coerente e harmoniosa que remete intuitivamente para o mês de Janeiro.</p>
+					</div>
 
-				<div class="description">
-					<p>O objetivo deste trabalho era criar uma página de um calendário para o mês atribuído. O que me calhou foi o mês de Janeiro. Utilizei uma ilustração que representasse este mês, sendo essa um brinde a representar o início de um novo ano. Para alêm disso, criei um padrão com tipografia para complementar o calendário. As únicas cores permitidas foram os pantones vermelho e preto. Como trabalho final obtive uma solução coerente e harmoniosa que remete intuitivamente para o mês de Janeiro.</p>
 				</div>
 
 			</div>
 
 		</div>
 
+
+
+
 	</div>
 
+	<!-- Rodapé -->
 
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Sofia Duque Lemos</h3>
+
+				<p class="footer-links">
+					<a href="#about">Sobre</a>
+					|
+					<a href="#formation">Formação</a>
+					|
+					<a href="#experience">Experiência</a>
+					|
+					<a href="#skills">Skills</a>
+					|
+					<a href="#projects">Projetos</a>
+
+				</p>
+
+				<p class="footer-company-name"> &copy; 2019</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="ion-android-mail"></i>
+					<p><a href="mailto:sofiaduquelemos@ua.pt">sofiaduquelemos@ua.pt</a></p>
+				</div>
+
+				<div>
+					<i class="ion-ios-telephone"></i>
+					<p>964 176 108</h3></p>
+				</div>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/profile.php?id=100007540039352"><i class="ion-social-facebook"></i></a>
+					<a href="https://www.linkedin.com/in/sofia-lemos-a6696415b/"><i class="ion-social-linkedin"></i></a>
+					<a href="https://www.instagram.com/sofiadlemos"><i class="ion-social-instagram"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
 
 
 </div>
 
+		
 
-</div>
-
-<script type="text/javascript">
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-		showDivs(slideIndex += n);
-	}
-
-	function currentDiv(n) {
-		showDivs(slideIndex = n);
-	}
-
-	function showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("demo");
-		if (n > x.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = x.length}
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";  
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" w3-white", "");
-				}
-				x[slideIndex-1].style.display = "block";  
-				dots[slideIndex-1].className += " w3-white";
-			}
-		</script>
-
-	</body>
-	</html>
+</body>
+</html>

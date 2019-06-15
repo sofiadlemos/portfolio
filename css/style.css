@@ -280,9 +280,9 @@ p {
   display:table;
   position:relative;
   background:#fff;
-  width: 70%;
+  width: 100%;
   border:1px solid #e7e7e7;
-  margin:40px auto 0 auto;
+  margin:40px auto 0 0;
 
 }
 
@@ -306,12 +306,14 @@ p {
 
 .box h2{
   font-size: 30px;
-  margin: 10px 0 -50px 40px;
+  margin-top: 6%;
+  margin-left: 40px;
+  line-height: normal;
 }
 
 .box h4{
   font-size: 15px;
-  margin: 0 40px 0 40px;
+  margin: 0 0 0 40px;
 }
 
 .box:hover h2{

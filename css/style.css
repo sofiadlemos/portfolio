@@ -7,7 +7,7 @@ html{
 ----------- Menu --------------
 */
 header {
-  font-style: 'Gidole', serif; 
+  font-style: 'GidoleRegular', serif; 
     text-align: center;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -21,7 +21,7 @@ header {
 
 
 nav ul {
-  font-style: 'Gidole', serif; 
+  font-style: 'GidoleRegular', serif; 
     display: inline-block;
     padding-left: 0;
     list-style: none;
@@ -32,13 +32,13 @@ nav ul {
 }
 
 nav li {
-  font-style: 'Gidole', serif; 
+  font-style: 'GidoleRegular', serif; 
     display: inline-block;
     margin: 10px;
 }
 
 nav li a {
-  font-style: 'Gidole', serif; 
+  font-style: 'GidoleRegular', serif; 
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #B46D41;
@@ -103,27 +103,27 @@ a:hover {
 ----------- Títulos --------------
 */
 h1 {
-    font-family: 'Gidole', serif;
+    font-family: 'GidoleRegular', serif;
     font-size: 80px;
     line-height: 70px;
     color: #f3f3f3;
 }
 
 h2 {
-    font-family: 'Gidole', serif;
+    font-family: 'GidoleRegular', serif;
     font-size: 60px;
     line-height: 70px;
 }
 
 h3 {
-    font-family: 'Gidole', serif;
+    font-family: 'GidoleRegular', serif;
     font-size: 30px;
     line-height: 30px;
     color: #B46D41;
 }
 
 h4 {
-    font-family: 'Gidole', serif;
+    font-family: 'GidoleRegular', serif;
     font-size: 20px;
     line-height: 30px;
     color: #B46D41;

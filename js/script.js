@@ -25,6 +25,19 @@ $(function () {
 
 	window.document.getElementById("welcome").innerHTML = greeting + ", sou a Sofia!<br/>"+bio;
 
+
+
+
+});
+
+"use strict";
+jQuery(document).ready(function ($) {
+
+    jQuery('.teamskillbar').each(function () {
+        jQuery(this).find('.teamskillbar-bar').animate({
+            width: jQuery(this).attr('data-percent')
+        }, 6000);
+    });
 });
 
 

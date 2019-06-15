@@ -50,6 +50,7 @@ a:focus {
 a:hover {
     color: #333333;
     text-decoration: none;
+    font-size: 12px;
 }
 
 
@@ -126,7 +127,8 @@ h4 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat';
+  letter-spacing: 1px;
  }
 
 
@@ -137,6 +139,10 @@ p {
 .table-cell {
     display: table-cell;
     vertical-align: middle;
+}
+
+.table-cell h1{
+    font-family: 'Dosis';
 }
 
 .disply-table {
@@ -259,13 +265,12 @@ p {
 }
 
 .timeline-item:hover h2{
-    color:#B46D41;
+    font-size: 31px;
 }
 
 .row{
 	padding: 4%;
 }
-
 
 /*
 ----------- Experiencia --------------
@@ -311,20 +316,127 @@ p {
 
 .box:hover h2{
     color:#B46D41;
+    font-size: 31px;
 }
 
 .box:hover h4{
     color:#333;
+    font-weight: bold;
 }
+
+
+
+/*
+----------- Skills --------------
+*/
+
+.features_item .f_item_icon{
+    float: left;
+    width:15%;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.features_item h3{
+  color: #333333;
+  margin-top: 5px;
+  padding: 1%;
+}
+
+.features_item .f_item_icon i{
+    font-size: 2.5rem;
+    color: #454545;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #454545;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.features_item .f_item_text{
+    display: inline-block;
+    width:75%;
+}
+.features_item .f_item_text p{
+    font-size:14px;
+}
+.features_item:hover .f_item_icon i{
+    background-color: #B46D41;
+    border-color:#B46D41;
+    color:#fff;
+}
+.features_item:hover .f_item_text h3{
+    color:#B46D41;
+}
+
+.item h3{
+  color: #333;
+}
+
+.item:hover h3{
+  font-size: 32px;
+}
+
+.item:hover .teamskillbar-bar{
+  height:6px;
+}
+
+
+.item:hover .teamskillbar{
+  height:6px;
+}
+
+
+.teamskillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    margin-top: 10%;
+    width:100%;
+    background: #ddd;
+    height:4px;
+    -webkit-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.teamskillbar-bar {
+    height:4px;
+    width:0px;
+    background:#B46D41;
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+
 
 
 /*
 ----------- Projectos --------------
 */
 
-.item{ background-color: white; }
+.item{ 
+  background-color: white;
+}
 
+.item h4{
+  color: #B46D41;
+  font-size: 25px;
+}
 
+.item:hover h4{
+  color: #333;
+  font-size: 30px;
+}
+
+.item:hover p{
+  font-weight: bold;
+}
 
 .imgicons {
 	width: 20%;
@@ -334,6 +446,10 @@ p {
 .description p{
   text-align: justify;
   padding: 5%;
+}
+
+.carousel{
+  margin-top: 5%;
 }
 
 /* ------------- Rodapé -------------------- */

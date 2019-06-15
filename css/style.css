@@ -66,6 +66,7 @@ a:hover {
     background: url(../img/home-bw.jpg);
     background-size: cover;
     height: 100vh;
+    background-position: center top; 
 }
 
 
@@ -308,6 +309,7 @@ p {
   font-size: 30px;
   margin-top: 6%;
   margin-left: 40px;
+  margin-right: 10px;
   line-height: normal;
 }
 
@@ -484,7 +486,7 @@ p {
 
 .footer-distributed h3{
 	color:  #B46D41;
-	font: lighter 36px 'Gidole', serif;
+	font: lighter 36px 'GidoleRegular', serif;
 	margin: 0;
 }
 
